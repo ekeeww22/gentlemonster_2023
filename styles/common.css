@@ -57,5 +57,5 @@ header #open_nav #nav_adver .swiper-button-prev::after,
 header #open_nav #nav_adver .swiper-button-next::after {display:none;}
 /* nav */
 header #open_nav nav {display:flex; flex-flow:column nowrap; text-align:center; padding-top:20px;}
-header #open_nav nav a {font-size:3.125rem; font-weight:700; line-height:110px; letter-spacing:-0.02em; transition:all 0.8s;}
-header #open_nav nav a:hover {color:#c01718; background:#fff;}
+header #open_nav nav a {font-size:3.125rem; font-weight:700; line-height:110px; border-bottom:1px solid rgba(0,0,0,0); letter-spacing:-0.02em; transition:all 0.8s;}
+header #open_nav nav a:hover {color:#c01718; }

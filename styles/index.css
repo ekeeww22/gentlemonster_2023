@@ -1,0 +1,32 @@
+/* main */
+/* main - 1. visual */
+main {}
+main .visual {position:relative; overflow:hidden; height:100vh;}
+main .visual .txt {/* background:yellow; */ position:absolute; width:100%; top:40%; z-index:888; color:#FFF; letter-spacing:-0.02em; text-align:center;}
+main .visual .txt p {font-size:2.3125rem; }
+main .visual .txt h1 {font-size:3.125rem; font-weight:700; margin:30px 0;}
+main .visual .txt .link {/* background:lime; */}
+main .visual .txt .link a {background:rgba(0,0,0,0.5); padding:20px 40px; font-size: 1.75rem; color:#fff; border:1px solid rgba(255,255,255,0.5); border-radius:5px; letter-spacing:-0.02em; display:inline-block; transition:all 0.4s;}
+main .visual .txt .link a:hover {background:rgba(255,255,255,0.5); color:#222; border-color:rgba(0,0,0,0.5);}
+main .visual .txt .link a:first-child {margin-right:10px;}
+main .visual video {
+    width:100%;
+    /* 화면크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건 ★★ 비디오의 부모가 vh or px 높이 설정 준비!(% 설정은 안됨) */
+    position:absolute; left:50%;
+    transform:translateX(-50%);
+    /* 방법3 절대 크기값 */
+    /* width:1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백해결법 */
+/* 1. 반응형 웹 @media 특정 해상도 마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크탑 기준으로 너비를 100% 보다 크게 설정하고 넘치게 하는 방법 */
+/* 3. 상대크기가 아닌 절대크기값(px) 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법 */
+main .adver_bnr {height:300px; background:url(../images/adver_bnr.jpg) no-repeat center; background-size: cover;}
+main .adver_bnr .txt {padding:80px 0 0 30px; letter-spacing:-0.02em;}
+main .adver_bnr .txt p {font-size: 1.75rem; font-weight: 500;}
+main .adver_bnr .txt h1 {font-size: 3.125rem; font-weight: 700; margin:20px 0;}
+main .adver_bnr .txt .link {}
+main .adver_bnr .txt .link a {padding:15px 40px; background:#fff; border-radius:5px; display:inline-block; font-size: 1.25rem; transition:all 0.5s;}
+main .adver_bnr .txt .link a:hover {background:rgba(0,0,0,0.5); color:#fff;}
+main .adver_bnr .txt .link a:first-child {margin-right:10px;}
