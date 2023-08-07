@@ -7,7 +7,7 @@ main .visual .txt p {font-size:2.3125rem; }
 main .visual .txt h1 {font-size:3.125rem; font-weight:700; margin:30px 0;}
 main .visual .txt .link {/* background:lime; */}
 main .visual .txt .link a {background:rgba(0,0,0,0.5); padding:20px 40px; font-size: 1.75rem; color:#fff; border:1px solid rgba(255,255,255,0.5); border-radius:5px; letter-spacing:-0.02em; display:inline-block; transition:all 0.4s;}
-main .visual .txt .link a:hover {background:rgba(255,255,255,0.5); color:#222; border-color:rgba(0,0,0,0.5);}
+main .visual .txt .link a:hover {background:rgba(255,255,255,0.8); color:#222; font-weight:600; border-color:rgba(0,0,0,0); }
 main .visual .txt .link a:first-child {margin-right:10px;}
 main .visual video {
     width:100%;
@@ -22,11 +22,29 @@ main .visual video {
 /* 1. 반응형 웹 @media 특정 해상도 마다 비디오의 크기 설정값 변경 */
 /* 2. 가장 큰 데스크탑 기준으로 너비를 100% 보다 크게 설정하고 넘치게 하는 방법 */
 /* 3. 상대크기가 아닌 절대크기값(px) 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법 */
-main .adver_bnr {height:300px; background:url(../images/adver_bnr.jpg) no-repeat center; background-size: cover;}
-main .adver_bnr .txt {padding:80px 0 0 30px; letter-spacing:-0.02em;}
-main .adver_bnr .txt p {font-size: 1.75rem; font-weight: 500;}
-main .adver_bnr .txt h1 {font-size: 3.125rem; font-weight: 700; margin:20px 0;}
+/* main 2. bnr */
+main .adver_bnr {height:300px; background:url(../images/adver_bnr.jpg) no-repeat center; background-size:cover;}
+main .adver_bnr .txt {
+    /* contents width px */
+    max-width:1200px; height:100%; margin:0 auto; /* background:aqua; */ display:flex; flex-flow:column nowrap; justify-content: center; }
+main .adver_bnr .txt p {font-size: 1.75rem; font-weight:500; letter-spacing:-0.02em;}
+main .adver_bnr .txt h1 {font-size: 3.125rem; font-weight:700; letter-spacing:-0.02em; margin:10px 0 20px;}
 main .adver_bnr .txt .link {}
-main .adver_bnr .txt .link a {padding:15px 40px; background:#fff; border-radius:5px; display:inline-block; font-size: 1.25rem; transition:all 0.5s;}
-main .adver_bnr .txt .link a:hover {background:rgba(0,0,0,0.5); color:#fff;}
+main .adver_bnr .txt .link a {padding:15px 40px; background:#fff; border-radius:5px; display:inline-block; font-size: 1.25rem; transition:all 0.5s; letter-spacing:-0.02em;}
+main .adver_bnr .txt .link a:hover {background:rgba(0,0,0,0.8); color:#fff; }
 main .adver_bnr .txt .link a:first-child {margin-right:10px;}
+/* main 3. service */
+/* 온라인 서비스 */
+main .online_service {background:url(../images/service_bg1.jpg) no-repeat; background-position:right center; background-size:80%; padding-top:80px; margin-top:100px; }/* background position x */
+main .online_service .txt {background:#fff; width:830px; padding:75px 130px;}/* w-px margin top */
+main .online_service .txt h1 {font-size: 3.125rem; font-weight:700; letter-spacing: -0.02em;}
+main .online_service .txt p {font-size: 1.25rem; line-height:35px; margin:35px 0; letter-spacing: -0.02em;}
+main .online_service .txt .service_link {padding:15px 40px; font-size: 1.25rem; color:#FFF; background:#222; letter-spacing: -0.02em; border-radius:5px; display: inline-block; transition:all 0.3s;}
+main .online_service .txt .service_link:hover {background:#C01718; padding:15px 60px; }
+/* 매장 서비스 */
+main .shop_service {background:url(../images/service_bg2.jpg) no-repeat; background-position:left center; background-size:80%; padding-top:80px; margin-top:100px; display:flex; flex-flow:row-reverse;}
+main .shop_service .txt {background:#fff; width:830px; padding:75px 130px; text-align:right;}
+main .shop_service .txt h1 {font-size: 3.125rem; font-weight:700; letter-spacing: -0.02em;}
+main .shop_service .txt p {font-size: 1.25rem; line-height:35px; margin:35px 0; letter-spacing:-0.02em;}
+main .shop_service .txt .store_link {padding:15px 40px; font-size: 1.25rem; color: #FFF; letter-spacing: -0.02em; background:#222; border-radius:5px; display: inline-block; transition:all 0.3s;}
+main .shop_service .txt .store_link:hover {background:#C01718; padding:15px 60px;}
