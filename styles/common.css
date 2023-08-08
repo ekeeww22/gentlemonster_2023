@@ -57,5 +57,23 @@ header #open_nav #nav_adver .swiper-button-prev::after,
 header #open_nav #nav_adver .swiper-button-next::after {display:none;}
 /* nav */
 header #open_nav nav {display:flex; flex-flow:column nowrap; text-align:center; padding-top:20px;}
-header #open_nav nav a {font-size:3.125rem; font-weight:700; line-height:110px; border-bottom:1px solid rgba(0,0,0,0); letter-spacing:-0.02em; transition:all 0.8s;}
-header #open_nav nav a:hover {color:#c01718; }
+header #open_nav nav a {font-size:3.125rem; font-weight:700; line-height:110px; letter-spacing:-0.02em; transition:all 0.8s; position:relative; }
+header #open_nav nav a::after {content:''; display:block; width:100%; height:2px; background:rgba(94, 0, 0, 0.411); position:absolute; bottom:-1px; transform:scaleX(0); transition:transform 0.5s;}
+header #open_nav nav a:hover::after {transform:scaleX(0.7);}
+header #open_nav nav a:hover {color: #c01718;}
+/* footer */
+footer {width:calc(100% - 60px); margin:0 auto;}
+footer .f_menu {display:flex; padding:40px 0 40px;}
+footer .f_menu dl {padding-right:50px;}
+footer .f_menu dl:last-child {padding-right:0;}
+footer .f_menu dl dt {font-size: 1.25rem; font-weight:500; margin-bottom:20px;}
+footer .f_menu dl dd {line-height:30px;}
+footer .f_menu dl dd a {color:#555; transition:all 0.3s;}
+footer .f_menu dl dd a:hover {color:#ccc;}
+footer .f_copy {display:flex;}
+footer .f_copy .logo {width:400px;}
+footer .f_copy .logo img {width:100%;}
+footer .f_copy address {letter-spacing:-0.02em; line-height:25px; margin:-10px 0 20px 30px;}
+footer .f_copy address a {text-decoration: underline; transition:all 0.3s;}
+footer .f_copy address a:hover {color:#ccc;}
+
