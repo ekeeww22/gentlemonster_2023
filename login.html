@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | GENTLEMONSTER</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <!-- header -->
+    <main>
+        
+        <div class="login_wrap">
+            <!-- 닫기 버튼 -->
+            <button type="button" id="login_close"><img src="./images/login_close.png" alt=""></button>
+            <!-- 로그인 영역 -->
+            <h1>로그인</h1>
+            <form action="#" id="loginFrm">
+                <fieldset>
+                    <legend class="skip">로그인양식</legend>
+                    <ul>
+                        <li class="id_input"><input type="text" id="user_id" placeholder="아이디 입력" onfocus="this.placeholder=''", onblur="this.placeholder='아이디 입력'"></li>
+                        <li class="pw_input"><input type="password" id="user_pw" placeholder="비밀번호 입력(영문, 숫자, 특수문자 조합)" onfocus="this.placeholder=''", onblur="this.placeholder='비밀번호 입력(영문, 숫자, 특수문자 조합)'"></li>
+                        <li class="id_save_input"><label><input type="checkbox" id="id_save"><span>아이디 저장</span></label></li>
+                    </ul>
+                    <button type="submit" id="login_btn">로그인</button>
+                </fieldset>
+            </form>
+            <div class="sns_login">
+                <a href="#"><img src="./images/icon_telephone.png" alt=""><span>휴대폰<br>로그인</span></a>
+                <a href="#"><img src="./images/icon_kakao.png" alt=""><span>카카오<br>로그인</span></a>
+                <a href="#"><img src="./images/icon_apple.png" alt=""><span>애플<br>로그인</span></a>
+                <a href="#" class="more_icon"><img src="./images/icon_more.png" alt=""><span>더보기</span></a>
+            </div>
+            <div class="user_info">
+                <a href="#" class="id_search">아이디 찾기</a>
+                <a href="#" class="pw_search">비밀번호 찾기</a>
+                <a href="#" class="user_order">비회원 주문/조회</a>
+            </div>
+            <div class="join_membership">
+                <p>아직 회원이 아니세요?</p>
+                <a href="#">회원가입 &gt;</a>
+            </div>
+        </div>
+        <!-- 더보기 클릭시 open 간편 로그인 창-->
+        <div class="simple_login">
+            <h1>간편 로그인</h1>
+            <a href="#"><img src="./images/icon_telephone.png" alt=""><span>휴대폰 로그인</span></a>
+            <a href="#"><img src="./images/icon_kakao.png" alt=""><span>카카오 로그인</span></a>
+            <a href="#"><img src="./images/icon_naver.png" alt=""><span>네이버 로그인</span></a>
+            <a href="#"><img src="./images/icon_facebook.png" alt=""><span>페이스북 로그인</span></a>
+            <a href="#"><img src="./images/icon_apple.png" alt=""><span>애플 로그인</span></a>
+            <button type="button" id="close_btn">닫기</button>
+        </div>
+    </main>
+    <!-- footer -->
+    <script>
+        const moreIcon = document.querySelector('.sns_login .more_icon')
+        const simpleLogin = document.querySelector('.simple_login')
+        const simpleLoginClose = document.querySelector('.simple_login #close_btn')
+        const closeBtn = document.querySelector('#login_close')
+        console.log(moreIcon, simpleLogin, simpleLoginClose, closeBtn)
+        simpleLogin.style.display = 'none'
+        moreIcon.addEventListener('click',function(){
+            simpleLogin.style.display = 'block'
+        })
+        simpleLoginClose.addEventListener('click',function(){
+            simpleLogin.style.display = 'none'
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+main {}
+/* 닫기 버튼 */
+main .login_wrap #login_close {width:25px; height:25px; position:absolute; top:15px; right:30px; background:none;}
+main .login_wrap #login_close img {width:100%;}
+/* 로그인 영역 */
+main .login_wrap {width:calc(100%); margin:0 auto; display:flex; flex-flow:column nowrap; align-items:center; position: relative; margin-top:100px;}
+main .login_wrap h1 {font-size: 2.375rem; font-weight:700; text-align:center;}
+main .login_wrap #loginFrm {margin:40px 0; }
+main .login_wrap #loginFrm fieldset {display:flex; flex-flow:column nowrap; align-items:center;}
+main .login_wrap #loginFrm fieldset ul {}
+main .login_wrap #loginFrm fieldset ul li {}
+main .login_wrap #loginFrm fieldset ul li > input {
+    border: 1px solid #A5A5A5; width:480px; height:50px; padding-left:15px; border-radius:10px;}
+main .login_wrap #loginFrm fieldset ul .id_input {margin-bottom:15px;}
+main .login_wrap #loginFrm fieldset ul .id_input #user_id {}
+main .login_wrap #loginFrm fieldset ul .pw_input {}
+main .login_wrap #loginFrm fieldset ul .pw_input #user_pw {}
+/* 아이디 저장 */
+main .login_wrap #loginFrm fieldset ul .id_save_input {margin:30px 0;}
+main .login_wrap #loginFrm fieldset ul .id_save_input label {}
+main .login_wrap #loginFrm fieldset ul .id_save_input label #id_save {margin-right:10px;}
+main .login_wrap #loginFrm fieldset ul .id_save_input label input {appearance:none;}
+main .login_wrap #loginFrm fieldset ul .id_save_input label input:checked+span {background:url(../images/check.png) no-repeat 0;} 
+main .login_wrap #loginFrm fieldset ul .id_save_input label span {background:url(../images/uncheck.png) no-repeat 0; padding-left:30px; color:#222; font-weight:500;}
+main .login_wrap #loginFrm fieldset #login_btn {width:480px; height:50px; border-radius:10px; color:#999; font-weight:500;}
+/* sns 로그인 */
+main .login_wrap .sns_login {
+    display:flex; width:100%; flex-flow:row nowrap; justify-content:space-between; padding:30px 70px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;}
+main .login_wrap .sns_login a {}
+main .login_wrap .sns_login a img {width:45px; height:45px; margin-bottom:10px;}
+main .login_wrap .sns_login a span {display:block; color:#222; font-weight:500; line-height:20px; text-align:center;}
+/* 아이디/비번찾기 */
+main .login_wrap .user_info {padding:30px 0;}
+main .login_wrap .user_info a {padding-right:20px; color:#999; font-weight:500;}
+/* main .login_wrap .user_info a::after {content:''; display:inline-block; width:1px; height:10px; background:#999;} */
+main .login_wrap .user_info a:last-child {padding-right:0;}
+main .login_wrap .user_info .id_search {}
+main .login_wrap .user_info .pw_search {}
+main .login_wrap .user_info .user_order {}
+/* 회원가입 */
+main .login_wrap .join_membership {
+    display:flex; justify-content:space-between; align-items:center; padding:0 20px; width:480px; height:50px; border:1px solid #A5A5A5; border-radius:10px;}
+main .login_wrap .join_membership p {color:#999; font-weight:500;}
+main .login_wrap .join_membership a {font-weight:500; }
+/* 클릭시 open 간편 로그인 창 */
+main .simple_login {
+    background:#fff;
+    margin:0 auto; position: relative; transform:translateY(-120%);
+    z-index:999;
+    width:400px; height:490px; padding:30px 20px 20px; 
+    border-radius:10px;
+}
+main .simple_login h1 {font-size: 1.25rem; font-weight:700; text-align:center; margin-bottom:30px;}
+main .simple_login a {display:flex; align-items:center; margin-bottom:20px;}
+main .simple_login a:nth-child(6) {margin-bottom:0;}
+main .simple_login a img {margin-right:15px;}
+main .simple_login a span {line-height: 1.25rem; font-weight:500;}
+main .simple_login #close_btn {
+    width:100%; padding:18px 160px; margin-top:30px; border-radius:10px; font-size:1.25rem; font-weight:500; color:#FFF; background:#5c95f0;}
