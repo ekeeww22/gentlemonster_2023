@@ -6,17 +6,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN | GENTLEMONSTER</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
     <!-- header -->
+    <?php include ("./header.php") ?>
     <main>
-        
         <div class="login_wrap">
-            <!-- 닫기 버튼 -->
-            <button type="button" id="login_close"><img src="./images/login_close.png" alt=""></button>
             <!-- 로그인 영역 -->
             <h1>로그인</h1>
             <form action="#" id="loginFrm">
@@ -58,11 +63,13 @@
         </div>
     </main>
     <!-- footer -->
+    <?php include ("./footer.php") ?>
     <script>
         const moreIcon = document.querySelector('.sns_login .more_icon')
         const simpleLogin = document.querySelector('.simple_login')
         const simpleLoginClose = document.querySelector('.simple_login #close_btn')
         const closeBtn = document.querySelector('#login_close')
+        const loginWrap = document.querySelector('.login_wrap')
         console.log(moreIcon, simpleLogin, simpleLoginClose, closeBtn)
         simpleLogin.style.display = 'none'
         moreIcon.addEventListener('click',function(){
@@ -71,7 +78,8 @@
         simpleLoginClose.addEventListener('click',function(){
             simpleLogin.style.display = 'none'
         })
-        
     </script>
+    <!-- header, footer 웹페이지 공통영역 적용JS -->
+    <script src="./script/common.js"></script>
 </body>
 </html>

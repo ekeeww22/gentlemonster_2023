@@ -1,7 +1,4 @@
 main {}
-/* 닫기 버튼 */
-main .login_wrap #login_close {width:25px; height:25px; position:absolute; top:15px; right:30px; background:none;}
-main .login_wrap #login_close img {width:100%;}
 /* 로그인 영역 */
 main .login_wrap {width:calc(100%); margin:0 auto; display:flex; flex-flow:column nowrap; align-items:center; position: relative; margin-top:100px;}
 main .login_wrap h1 {font-size: 2.375rem; font-weight:700; text-align:center;}
@@ -25,7 +22,7 @@ main .login_wrap #loginFrm fieldset ul .id_save_input label span {background:url
 main .login_wrap #loginFrm fieldset #login_btn {width:480px; height:50px; border-radius:10px; color:#999; font-weight:500;}
 /* sns 로그인 */
 main .login_wrap .sns_login {
-    display:flex; width:100%; flex-flow:row nowrap; justify-content:space-between; padding:30px 70px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;}
+    display:flex; width:480px; flex-flow:row nowrap; justify-content:space-between; padding:30px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;}
 main .login_wrap .sns_login a {}
 main .login_wrap .sns_login a img {width:45px; height:45px; margin-bottom:10px;}
 main .login_wrap .sns_login a span {display:block; color:#222; font-weight:500; line-height:20px; text-align:center;}

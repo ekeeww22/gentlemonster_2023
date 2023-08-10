@@ -1,0 +1,44 @@
+main {}
+main #category {display:flex; width:1300px; margin:0 auto; justify-content:space-between; margin-bottom:150px;}
+main #category a {width:170px; height:170px; border-radius:50%; display:flex; flex-flow:column nowrap; align-items:center;}
+main #category a:hover img {filter:brightness(105%);}
+main #category a img {width:100%; transition:all 0.5s;}
+main #category a span {margin-top:20px; font-weight:500; font-size:1.25rem; transition:all 0.5s;}
+main #category a span:hover {color:#999;}
+main #product_list {width:1500px; margin:0 auto;}
+main #product_list .title {width:calc(100% - 60px); margin:0 auto;}
+main #product_list .title * {font-size:1.25rem;}
+main #product_list .title .top {display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:30px; border-bottom:2px solid #000;}
+main #product_list .title .top h1 {font-size:2.3125rem; font-weight:700;}
+main #product_list .title .top .filter {}
+main #product_list .title .top .filter a {padding-right:20px; font-weight:500; color:#999; transition:all 0.5s;}
+main #product_list .title .top .filter a:hover {color:#333;}
+main #product_list .title .top .filter a:last-child {padding-right:0;}
+main #product_list .title .btm {display:flex; justify-content:space-between; margin-top:30px;}
+main #product_list .title .btm p {}
+main #product_list .title .btm p em {font-weight:500;}
+main #product_list .title .btm #product_align {border:none; background:none; font-size:1.25rem;}
+main #product_list .title .btm #product_align option {}
+main #product_list .container {display:flex; justify-content: space-between; margin-top:100px;}
+main #product_list .container .item {width:calc(20% - 15px);}
+main #product_list .container .item .box {position:relative; margin-bottom:15px;}
+main #product_list .container .item .box .item_img {}
+main #product_list .container .item .box .item_img img {width:100%;}
+main #product_list .container .item .box .like_img {position:absolute; top:15px; right:15px;}
+main #product_list .container .item .box .like_img img {}
+main #product_list .container .item .txt {}
+main #product_list .container .item .txt * {padding-bottom:15px; font-size:1.25rem;}
+main #product_list .container .item .txt h2 {color:#6ea8eeff; font-size:1rem;}
+main #product_list .container .item .txt .name {font-weight:600;}
+main #product_list .container .item .txt .price {font-weight:500; color:#333}
+main #product_list .container .item .txt .color {display:flex; padding-top:5px;}
+main #product_list .container .item .txt .color span {width:20px; height:20px; border-radius:50%; margin-right:5px;}
+main #product_list .container .item .txt .color .black {background:black;}
+main #product_list .container .item .txt .color .brown {background:brown;}
+main #product_list .container .item .txt .color .khaki {background:khaki;}
+main #product_list .container .item .txt .color .white {background:white; border:0.1px solid #ccc;}
+main #product_list .container .item .txt .color .blue {background:blue;}
+main #product_list .container .item .txt .color .navy {background:navy;}
+main #product_list .container .item .txt .color .beige {background:beige;}
+main #product_list .container .item .txt .color .gray {background:gray;}
+main #product_list .container .item .txt .color .chocolate {background: chocolate;}
