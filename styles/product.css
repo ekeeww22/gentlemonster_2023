@@ -1,11 +1,37 @@
 main {}
+/* 1. swiper-slide */
+main #product_slide {margin-bottom:100px;}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide1~6 */
+    width:700px; height:740px; position:relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position:absolute; bottom:60px; left:60px; color:#fff;
+    /* 초기 숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능추가) */
+    opacity:0; transition:all 2s; transform:translateX(60px);
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 {font-size: 2.3125rem; font-weight:700; line-height:50px; text-shadow:1px 1px 2px #999;} 
+main #product_slide .swiper-wrapper .swiper-slide .txt p {font-size: 1.25rem; font-weight:700; letter-spacing:-0.02em; margin-top:30px; color:#444; text-shadow:1px 1px 1px #444;}
+main #product_slide .swiper-wrapper .slide1 {background-image:url(../images/model/model_01.jpg);}
+main #product_slide .swiper-wrapper .slide2 {background-image:url(../images/model/model_02.jpg);}
+main #product_slide .swiper-wrapper .slide3 {background-image:url(../images/model/model_03.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background-image:url(../images/model/model_04.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background-image:url(../images/model/model_05.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background-image:url(../images/model/model_06.jpg);}
+/* swiper-scrollbar design */
+main #product_slide .swiper-scrollbar {width:500px; background:rgba(255,255,255,0.8); position:absolute; left:50%; transform:translateX(-50%); bottom:30px;}/* 스크롤 배경(크기,위치O) */
+main #product_slide .swiper-scrollbar-drag {background:#222;}/* 스크롤 막대(크기X)*/
+/* 2. 카테고리 */
 main #category {display:flex; width:1300px; margin:0 auto; justify-content:space-between; margin-bottom:150px;}
 main #category a {width:170px; height:170px; border-radius:50%; display:flex; flex-flow:column nowrap; align-items:center;}
 main #category a:hover img {filter:brightness(105%);}
 main #category a img {width:100%; transition:all 0.5s;}
 main #category a span {margin-top:20px; font-weight:500; font-size:1.25rem; transition:all 0.5s;}
 main #category a span:hover {color:#999;}
+/* 3. 상품 리스트 */
 main #product_list {width:1500px; margin:0 auto;}
+/* 3-1. 상품 리스트 - 제목 */
 main #product_list .title {width:calc(100% - 60px); margin:0 auto;}
 main #product_list .title * {font-size:1.25rem;}
 main #product_list .title .top {display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:30px; border-bottom:2px solid #000;}
@@ -19,6 +45,7 @@ main #product_list .title .btm p {}
 main #product_list .title .btm p em {font-weight:500;}
 main #product_list .title .btm #product_align {border:none; background:none; font-size:1.25rem;}
 main #product_list .title .btm #product_align option {}
+/* 3-2. 상품 리스트 - 내용 */
 main #product_list .container {display:flex; justify-content: space-between; margin-top:100px;}
 main #product_list .container .item {width:calc(20% - 15px);}
 main #product_list .container .item .box {position:relative; margin-bottom:15px;}
@@ -31,8 +58,8 @@ main #product_list .container .item .txt * {padding-bottom:15px; font-size:1.25r
 main #product_list .container .item .txt h2 {color:#6ea8eeff; font-size:1rem;}
 main #product_list .container .item .txt .name {font-weight:600;}
 main #product_list .container .item .txt .price {font-weight:500; color:#333}
-main #product_list .container .item .txt .color {display:flex; padding-top:5px;}
-main #product_list .container .item .txt .color span {width:20px; height:20px; border-radius:50%; margin-right:5px;}
+main #product_list .container .item .txt .color {padding-top:5px;}
+main #product_list .container .item .txt .color span {display:inline-block; width:20px; height:20px; border-radius:50%; margin-right:5px;}
 main #product_list .container .item .txt .color .black {background:black;}
 main #product_list .container .item .txt .color .brown {background:brown;}
 main #product_list .container .item .txt .color .khaki {background:khaki;}
