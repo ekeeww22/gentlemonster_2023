@@ -1,0 +1,7 @@
+#map {
+    background:aqua;
+    width:700px; height:500px; margin:50px auto;
+}
+h1 {font-size:1.5rem; font-weight:600;}
+p:nth-of-type(1) {font-size:1.2rem; font-weight:600; line-height:1.5rem;}
+p {line-height:1.25rem;}
